@@ -1,0 +1,158 @@
+lsit of object
+we can store and create multiple object 
+__str__ itr si method to display an object 
+:- it invoke implecity when we print an object
+
+# Operator overolading
+1. To defined aditional behaviour/ meaning of an Operator
+2. to assigned new functionality/ Operation to an Operator
+
+class Point:
+    'to represent a point by x,y and z'
+
+    def __init__(self):
+        'to initialize a point by x,y and z'
+        self.X = float(input("Enter X : "))
+        self.Y = float(input("Enter Y : "))
+        self.Z = float(input("Enter Z : "))
+
+    def __str__(self):
+        'to display an object details'
+        str = "X : %0.2f\tY : %0.2f\tZ : %0.2f"%(self.X,self.Y,self.Z)
+        return str
+# Create a list to store objects of Point Class
+points = []
+for i in range(3):
+    # Creating an object & appending into list
+    points.append(Point())
+
+# Print obj 1 by 1
+for obj_in_item in points:
+    print(obj_in_item)
+
+
+'''
+Built-in class__dict__
+__doc__
+__name__
+__module__
+__bases__
+
+Built-in functions
+getattr(obj, name[,default])
+hasattr(obj,name)
+setattr(obj,name,value)
+delattr(obj,name)
+
+
+# inheritance 
+1. It is process to inherite bae class functionality into the derived class
+2. the significance of inheritance of reusability
+3. It is defined is a 
+
+
+
+parent class -> child class
+supern class -> subclass
+BaseClass -> derived class
+
+# Syntex of inheritance
+class <DerivedClass>(BaseClass1[,BaseClass2]):
+
+
+Exception : An Exception is an event/problem/interrupt/error which occurs during the Execution of a program that disrupts the normal
+
+Exception Classes
+Exception
+Stopitration
+SystemExit
+StandaedError
+ArithmeticError
+OverflowError
+FlotingPointError
+ZeroDivisionError
+AssertionError
+AttributeError
+EOFError
+ImportError
+Keyboardintertupt
+LookupError
+KeyError
+NameError
+UnboundLocalError
+EnvironmntError
+IOError
+OSError
+SyntaxError
+TypeError
+ValueError
+RuntimeError
+NotImplementedError
+
+Handling Exception:
+1. To prevent a program from being terminated and to preform an action when an Exception action.
+2. Try aecept clause can be used  to handle Exception.
+
+
+Syntax:
+try:
+    st1
+    st2
+    st3
+    st4
+except ExceptionType as <obj>[,ExceptionType as <obj>,...]:
+    st1
+    st2
+    st3
+else:
+    st1
+    st2
+    st3
+
+# Multiple accept blocks
+1. To preform diffrent actions based on Exception time.
+
+
+# finally Keyword:
+1. It Executes always it accurs or not. It is an optional
+2. You can provide except clause or a finally clause or both, you can't use else clause as well along with a finally clause.
+
+Syntax : 
+try:
+    st1
+    st2
+    st3
+except ExceptionType as ex:
+    # action code
+    st1
+    st2
+    st3
+finally:
+    # Release resouce and clean up code
+    st1
+    st2   
+
+
+# Raising an Exception
+
+# User-Defined Exception
+1. We can create a user-defined/custom Exceptions try deriving classes from the standrad built-in  Exceptions.
+2. a class is created that is subclassed from RuntimeError.
+
+# Set in python
+Set is a collection of uniqe elements means that i not duplicate elements into a set
+<setname> = {item1,item2,item3,...}
+
+# Methos of set object
+1. add(obj)
+2. remove(obj)
+3. pop(obj)
+4. update(obj)
+5. intersection(obj)
+
+
+# Graphical inter face
+tkinter is a predefined library in python to provide Graphical user interface components to design a software.
+ex : textfiled, radiobtn,btn,combobox ect.
+  
+

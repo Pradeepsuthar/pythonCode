@@ -1,0 +1,34 @@
+{
+    "flights":{
+        "fight1":{
+            "flightNum":"Al-490",
+            "fromCode": "surat",
+            "toCode":  "delhi",
+            "AirportName":"AirportName",
+            "duration": "21:25-23:05",
+            "price":"5518",
+            "time":"1:40m",
+            "type":"AirIndia"
+        },
+        "fight2":{
+            "flightNum":"6E-5029",
+            "fromCode": "surat",
+            "toCode":  "delhi",
+            "AirportName":"AirportName",
+            "duration": "21:30-23:30",
+            "price":"5518",
+            "time":"2:00hr",
+            "type":"Indigo"
+        },
+        "fight3":{
+            "flightNum":"SG-8482",
+            "fromCode": "surat",
+            "toCode":  "delhi",
+            "AirportName":"AirportName",
+            "duration": "21:25-23:05",
+            "price":"6096",
+            "time":"1:50m",
+            "type":"spicejet"
+        }
+    }
+}

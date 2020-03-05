@@ -1,0 +1,260 @@
+{
+    "flights":{
+        "flight1":{
+            "flightNum":"Al-490",
+            "fromCode": "surat",
+            "toCode":  "delhi",
+            "AirportName":"surat internation airport",
+            "duration": "21:25-23:05",
+            "price":"5518",
+            "time":"1:40m",
+            "type":"AirIndia"
+        }
+        "flight2":{
+            "flightNum":"6E-5029",
+            "fromCode": "surat",
+            "toCode":  "delhi",
+            "AirportName":"surat international airport",
+            "duration": "21:30-23:30",
+            "price":"5518",
+            "time":"2:00hr",
+            "type":"Indigo"
+        }
+        "flight3":{
+            "flightNum":"SG-8482",
+            "fromCode": "surat",
+            "toCode":  "delhi",
+            "AirportName":"surat international airport",
+            "duration": "21:25-23:05",
+            "price":"6096",
+            "time":"1:50m",
+            "type":"spicejet"
+        }
+    }
+"flights":{
+    "flight4":
+    {
+     "flightNum":"l5-482",
+     "fromcode":"delhi",
+     "tocode":"bombay",
+     "Airport name":"Indira Gandhi Intl",
+     "time":"2:10m",
+     "price":"6044",
+     "duration":"21:00-23:10",
+     "price":"6044",
+     "type":"Airasia India"
+    }
+"flight5":
+   { 
+    "flightNum":"SG-8159",
+    "fromcode":"delhi",
+    "to code":"bombay",
+    "Airport name":"Indira Gandhi Intl",
+    "time":"2:15m",
+    "duration":"21:35-23:50",
+    "price":"6568",
+    "type":"spicejet"
+  }
+"flight6":
+   {
+    "flightNum":"UK-953",
+    "fromcode":"delhi",
+    "to code":"bombay",
+    "Airport name":"Indira Gandhi Intl",
+    "time":"2:10m",
+    "duration":"20:40-22:50",
+    "price":"6988",
+    "type":"vistara"
+   }  
+"flights":
+   {
+    "flight7:
+   {
+     "flightNum":"l5-482",
+     "fromcode":"delhi",
+     "to code":"bombay",
+     "Airport name":"Indira Gandhi Intl",
+     "time":"2:10m",
+     "price":"6044",
+     "duration":"21:00-23:10",
+     "price":"6044",
+     "type":"Airasia India"
+   }
+  "flight8":
+   { 
+    "flightNum":"SG-8159",
+    "fromcode":"delhi",
+    "to code":"bombay",
+    "Airport name":"Indira Gandhi Intl",
+    "time":"2:15m",
+    "duration":"21:35-23:50",
+    "price":"6568",
+    "type":"spicejet"
+  }
+"flight9":
+   {
+    "flightNum":"UK-953",
+    "fromcode":"delhi",
+    "to code":"bombay",
+    "Airport name":"Indira Gandhi Intl",
+    "time":"2:10m",
+    "duration":"20:40-22:50",
+    "price":"6988",
+    "type":"vistara",
+   }  
+"flight10":
+   {
+    "flightNum":"SG-8705",
+    "fromcode":"delhi",
+    "to code":"bombay",
+    "Airport name":"Indira Gandhi Intl",
+    "time":"2:15m",
+    "duration":"20:30-22:45",
+    "price":"7146",
+    "type":"spicejet",
+   }
+"flight11":
+   {
+    "flightNum":"SG-8159",
+    "fromcode":"delhi",
+    "to code":"bombay",
+    "Airport name":"Indira Gandhi Intl",
+    "time":"2:15m",
+    "duration":"21:35-23:50",
+    "price":"6568",
+    "type":"spicejet",
+   }
+"flight12":
+   {
+    "flightNum":"SG-8705",
+    "fromcode":"delhi",
+    "to code":"bombay",
+    "Airport name":"Indira Gandhi Intl",
+    "time":"2hr:10m",
+    "duration":"21:40-23:50",
+    "price":"6988",
+    "type":"vistara"
+   }
+"flight13":
+   {
+    "flightNum":"SG-8705",
+    "fromcode":"delhi",
+    "to code":"bombay",
+    "Airport name":"Indira Gandhi Intl",
+    "time":"2:25m",
+    "duration":"20:35-23:00",
+    "price":"8180",
+    "type":"IndiGo"
+   }
+"flight14":
+   {
+    "flightNum":"G8-544",
+    "fromcode":"delhi",
+    "to code":"bombay",
+    "Airport name":"Indira Gandhi Intl",
+    "time:2:20m",
+    "duration":"22:40-01:00+1D",
+    "price":"8242",
+    "type":"GoAir"
+   }
+"flight15":
+   {
+    "flightNum":"UK-953",
+    "fromcode":"delhi",
+    "to code":"bombay",
+    "Airport name":"Indira Gandhi Intl",
+    "time":"2:15m",
+    "duration":"19:30-21:45",
+    "price":"9834",
+    "type":"IndiGo"
+   }
+"flight16":
+   {
+    "flightNum":"UK-985",
+    "fromcode":"delhi",
+    "to code":"bombay"
+    "Airport name":"Indira Gandhi Intl",
+    "time":"2:05m",
+    "duration":"19:50-21:55",
+    "price":"10911",
+    "type":"vistara"
+   }
+  }
+"flight17":
+  {
+    "flightNum":"6E-764",
+    "fromcode":"bombay",
+    "to code":"udaipur",
+    "Airport name":"chattrapati shivaji international",
+    "time":"1:20m",
+    "duration":"17:50-18:45",
+    "price":"3889",
+    "type":"Indigo",
+  }
+ "flight18":
+ {
+    "flightNum":"SG-6422",
+    "fromcode":"bombay",
+    "to code":"udaipur",
+    "Airport name":"chattrapati shivaji international",
+    "time":"1:30m",
+    "duration":"15:50-17:20",
+    "price":"3887",
+    "type":"spicejet"
+ }
+"flight19":
+{
+    "flightNum":"6E-749",
+    "fromcode":"bombay",
+    "to code":"udaipur",
+    "Airport name":"chattrapati shivaji international",
+    "time":"1:30m",
+    "duration":"12:15-13:40",
+    "price":"4250",
+    "type":"Indigo",
+}
+flight20:
+{
+    "flightNum":"Al-643",
+    "fromcode":"bombay",
+    "to code":"udaipur",
+    "Airport name":"chattrapati shivaji international",
+    "time":"1:20m",
+    "duration":"14:20-15:40",
+    "price":"4309",
+    "type":"Airlndia"
+}
+    
+"flight21":
+{
+    "flightNum":"UK-613",
+    "from code":"bombay",
+    "to code":"udaipur",
+    "Airport name":"chattrapati shivaji international",
+    "time":"1:30m"
+    "duration":"12:15-13:45",
+    "price":"4519",
+    "type":"vistara"
+}  
+"flight 22":
+{
+    "flightNum":"SG-3722",
+    "fromcode":"surat",
+    "to code":"udaipur",
+    "Airport name":"surat international airport",
+    "time":"1:15m",
+    "duration":"14:35-15:50",
+    "price":"3734",
+    "type":"spicejet"
+}
+"flight23":
+{
+    "flightNum":"Al-490",
+    "from code":"surat",
+    "to code":"udaipur",
+    "Airport name":"surat international airport",
+    "time":17:10m",
+    "duration":"21:25-14:35+1D",
+    "price":"7513",
+    "type":"AirIndia"
+}

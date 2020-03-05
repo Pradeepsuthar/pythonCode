@@ -1,0 +1,134 @@
+{% extends 'shop/basic.html' %}
+
+{% block title %} Shoping Cart {% endblock %}
+{% block body %}
+<!-- <div class="text-center mt-4">
+        <h1>My Cart (1)</h1>
+    </div>
+      -->
+
+
+
+
+
+<div class="container-fluid" style="background-color: #f1f3f6;">
+    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+    <div class="row">
+        <div class="col-md-8 mt-4">
+            <div class="bg-white p-4">
+                <h6 class="font-weight-bolder text-uppercase text-dark">My Cart(1)</h6>
+            </div>
+            <div class="row">
+
+                <div class="col-12 col-lg-12 col-xl-12">
+                    <ul class="list-unstyled card p-3 rounded-0" id="cart-list">
+                        <li class="media" id="added-item">
+                            <img src="http://127.0.0.1:8000/media/shop/images/Roadster.jpg" alt="img-thumbnail"
+                                class="img-thumbnail" style="max-width: 150px; max-height: 200px;">
+                            <div class="media-body ml-3">
+                                <h5 class="card-title">Roadster</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Men Olive Green Solid Hooded Sweatshirt
+                                </h6>
+                                <p class="card-text"><b>Price</b> : Rs.639 <strike class="text-muted"
+                                        style="font-size: 12px;"> Rs.1599</strike> <span class="text-success">(20%
+                                        OFF)</span></p>
+
+                                <a href="#" class="card-link text-dark text-uppercase font-weight-bolder"
+                                    id="checkout">Checkout</a>
+                                <a href="#" class="card-link text-dark text-uppercase font-weight-bolder" id="remove-item" >Remove</a>
+
+                                <form class="my-4">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-secondary" style="height: 38px;">-</button>
+                                        <div class="form-group">
+                                            <input class="form-control align-self-start rounded-0" type="text"
+                                                name="quantity" id="qty" onkeypress="return isNumberKey(event)"
+                                                value="1" style="width: 40px;">
+                                        </div>
+                                        <button type="button" class="btn btn-secondary" style="height: 38px;">+</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+
+                    </ul>
+
+
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+        <div class="col-12 col-md-4 mt-4 ">
+            <div class="card p-2 rounded-0">
+                <h6 class="font-weight-bolder text-uppercase text-muted mt-3">PRICE DETAILS</h6>
+                <hr>
+                <div class="d-flex bd-highlight">
+                    <div class="p-2 w-100 bd-highlight">Price (1 items)</div>
+                    <div class="p-2 flex-shrink-1 bd-highlight">₹639.00</div>
+                </div>
+                <div class="d-flex bd-highlight">
+                    <div class="p-2 w-100 bd-highlight">Delivery Fee</div>
+                    <div class="p-2 flex-shrink-1 bd-highlight"><span class="text-success">FREE</span></div>
+                </div>
+                <hr>
+                <div class="d-flex bd-highlight">
+                    <div class="p-2 w-100 bd-highlight">Total Payable</div>
+                    <div class="p-2 flex-shrink-1 bd-highlight"><span class="font-weight-bolder">₹639.00</span></div>
+                </div>
+                <hr>
+                <div class="d-flex bd-highlight">
+                    <div class="p-2 w-100 bd-highlight">You will save on this order</div>
+                    <div class="p-2 flex-shrink-1 bd-highlight"><span class="font-weight-bolder">₹639.00</span></div>
+                </div>
+            </div>
+            <div class="mt-2 d-none d-sm-block">
+                <button type="button" class="btn btn-dark btn-lg btn-block rounded-0">Place Order</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- In Mobile view -->
+    <div class="fixed-bottom d-block d-sm-none">
+        <div class="card p-2 rounded-0">
+            <button type="button" class="btn btn-dark btn-block rounded-0">Place Order</button>
+        </div>
+    </div>
+
+
+    <script>
+        function isNumberKey(evt) {
+            var charCode = (evt.which) ? evt.which : event.keyCode
+            console.log(charCode)
+            if (charCode > 31 && (charCode < 48 || charCode > 57))
+                return false;
+            return true;
+
+            // var qty = document.getElementById('qty').value;
+        }
+
+        // Remove btn
+        // $(document).ready(function () {
+        //     $("#remove-item").click(function () {
+        //         $("li").remove("#added-item");
+        //     });
+        // });
+
+        document.getElementById('remove-item').addEventListener("click", removeItem);
+        function removeItem() {
+            var cart_list = document.getElementById("cart-list");
+            cart_list.removeChild(cart_list.childNodes[0]);
+        }
+
+
+
+    </script>
+
+
+
+    {% endblock %}

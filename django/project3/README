@@ -1,0 +1,2746 @@
+
+D:\Programming Language\python Programming\django>cmd.exe
+Microsoft Windows [Version 10.0.18362.535]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+D:\Programming Language\python Programming\django>cd project3
+
+D:\Programming Language\python Programming\django\project3>virtualenv env
+Using base prefix 'c:\\users\\pradeepbhardwaj\\appdata\\local\\programs\\python\\python38-32'
+New python executable in D:\Programming Language\python Programming\django\project3\env\Scripts\python.exe
+Installing setuptools, pip, wheel...
+done.
+
+D:\Programming Language\python Programming\django\project3>..\env\scripts\activate
+The system cannot find the path specified.
+
+D:\Programming Language\python Programming\django\project3>. .\env\Scripts\activate
+'.' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\Programming Language\python Programming\django\project3>..\env\Scripts\activate
+The system cannot find the path specified.
+
+D:\Programming Language\python Programming\django\project3>cd env
+
+D:\Programming Language\python Programming\django\project3\env>cd Scripts
+
+D:\Programming Language\python Programming\django\project3\env\Scripts>activate
+
+(env) D:\Programming Language\python Programming\django\project3\env\Scripts>pip install django
+Collecting django
+  Downloading https://files.pythonhosted.org/packages/55/d1/8ade70e65fa157e1903fe4078305ca53b6819ab212d9fbbe5755afc8ea2e/Django-3.0.2-py3-none-any.whl (7.4MB)
+     |████████████████████████████████| 7.4MB 544kB/s
+Collecting pytz
+  Using cached https://files.pythonhosted.org/packages/e7/f9/f0b53f88060247251bf481fa6ea62cd0d25bf1b11a87888e53ce5b7c8ad2/pytz-2019.3-py2.py3-none-any.whl
+Collecting asgiref~=3.2
+  Using cached https://files.pythonhosted.org/packages/a5/cb/5a235b605a9753ebcb2730c75e610fb51c8cab3f01230080a8229fa36adb/asgiref-3.2.3-py2.py3-none-any.whl
+Collecting sqlparse>=0.2.2
+  Using cached https://files.pythonhosted.org/packages/ef/53/900f7d2a54557c6a37886585a91336520e5539e3ae2423ff1102daf4f3a7/sqlparse-0.3.0-py2.py3-none-any.whl
+Installing collected packages: pytz, asgiref, sqlparse, django
+Successfully installed asgiref-3.2.3 django-3.0.2 pytz-2019.3 sqlparse-0.3.0
+
+(env) D:\Programming Language\python Programming\django\project3\env\Scripts>django-admin startproject crm_main .
+
+(env) D:\Programming Language\python Programming\django\project3\env\Scripts>cd.
+
+(env) D:\Programming Language\python Programming\django\project3\env\Scripts>cd..
+
+(env) D:\Programming Language\python Programming\django\project3\env>cd..
+
+(env) D:\Programming Language\python Programming\django\project3>django-admin startproject crm_main .
+
+(env) D:\Programming Language\python Programming\django\project3>mkdir apps
+
+(env) D:\Programming Language\python Programming\django\project3>mkdir templates
+
+(env) D:\Programming Language\python Programming\django\project3>mkdir static
+
+(env) D:\Programming Language\python Programming\django\project3>mkdir media
+
+(env) D:\Programming Language\python Programming\django\project3>.\manage.py collectstatic
+
+130 static files copied to 'D:\static'.
+
+(env) D:\Programming Language\python Programming\django\project3>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 12, 2020 - 19:44:33
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[12/Jan/2020 19:44:39] "GET / HTTP/1.1" 200 16351
+[12/Jan/2020 19:44:39] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[12/Jan/2020 19:44:39] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[12/Jan/2020 19:44:39] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[12/Jan/2020 19:44:39] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[12/Jan/2020 20:15:00] "GET / HTTP/1.1" 200 16351
+[12/Jan/2020 20:15:01] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[12/Jan/2020 20:15:02] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[12/Jan/2020 20:15:02] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[12/Jan/2020 20:15:02] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+D:\Programming Language\python Programming\django\project3\crm_main\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\apps\config.py", line 118, in create
+    cls = getattr(mod, cls_name)
+AttributeError: module 'apps' has no attribute 'common'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 76, in raise_last_exception
+    raise _exception[1]
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\__init__.py", line 357, in execute
+    autoreload.check_errors(django.setup)()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\apps\registry.py", line 91, in populate
+    app_config = AppConfig.create(entry)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\apps\config.py", line 136, in create
+    import_module(entry)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'apps.common'
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\__init__.py", line 395, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\base.py", line 328, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\commands\runserver.py", line 60, in execute
+    super().execute(*args, **options)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\base.py", line 369, in execute
+    output = self.handle(*args, **options)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\commands\runserver.py", line 95, in handle
+    self.run(**options)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\commands\runserver.py", line 102, in run
+    autoreload.run_with_reloader(self.inner_run, **options)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 599, in run_with_reloader
+    start_django(reloader, main_func, *args, **kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 584, in start_django
+    reloader.run(django_main_thread)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 299, in run
+    self.run_loop()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 305, in run_loop
+    next(ticker)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 345, in tick
+    for filepath, mtime in self.snapshot_files():
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 361, in snapshot_files
+    for file in self.watched_files():
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 260, in watched_files
+    yield from iter_all_python_module_files()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 105, in iter_all_python_module_files
+    return iter_modules_and_files(modules, frozenset(_error_files))
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 141, in iter_modules_and_files
+    resolved_path = path.resolve(strict=True).absolute()
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\pathlib.py", line 1159, in resolve
+    s = self._flavour.resolve(self, strict=strict)
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\pathlib.py", line 197, in resolve
+    return self._ext_to_normal(_getfinalpathname(s))
+OSError: [WinError 123] The filename, directory name, or volume label syntax is incorrect: '<frozen importlib._bootstrap>'
+
+(env) D:\Programming Language\python Programming\django\project3>python manage.py runserver
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\apps\config.py", line 118, in create
+    cls = getattr(mod, cls_name)
+AttributeError: module 'apps' has no attribute 'common'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 76, in raise_last_exception
+    raise _exception[1]
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\__init__.py", line 357, in execute
+    autoreload.check_errors(django.setup)()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\apps\registry.py", line 91, in populate
+    app_config = AppConfig.create(entry)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\apps\config.py", line 136, in create
+    import_module(entry)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'apps.common'
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\__init__.py", line 395, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\base.py", line 328, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\commands\runserver.py", line 60, in execute
+    super().execute(*args, **options)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\base.py", line 369, in execute
+    output = self.handle(*args, **options)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\commands\runserver.py", line 95, in handle
+    self.run(**options)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\commands\runserver.py", line 102, in run
+    autoreload.run_with_reloader(self.inner_run, **options)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 599, in run_with_reloader
+    start_django(reloader, main_func, *args, **kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 584, in start_django
+    reloader.run(django_main_thread)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 299, in run
+    self.run_loop()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 305, in run_loop
+    next(ticker)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 345, in tick
+    for filepath, mtime in self.snapshot_files():
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 361, in snapshot_files
+    for file in self.watched_files():
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 260, in watched_files
+    yield from iter_all_python_module_files()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 105, in iter_all_python_module_files
+    return iter_modules_and_files(modules, frozenset(_error_files))
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 141, in iter_modules_and_files
+    resolved_path = path.resolve(strict=True).absolute()
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\pathlib.py", line 1159, in resolve
+    s = self._flavour.resolve(self, strict=strict)
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\pathlib.py", line 197, in resolve
+    return self._ext_to_normal(_getfinalpathname(s))
+OSError: [WinError 123] The filename, directory name, or volume label syntax is incorrect: '<frozen importlib._bootstrap>'
+
+(env) D:\Programming Language\python Programming\django\project3>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 12, 2020 - 20:19:09
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[12/Jan/2020 20:19:12] "GET / HTTP/1.1" 200 16351
+D:\Programming Language\python Programming\django\project3\crm_main\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 12, 2020 - 20:21:07
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[12/Jan/2020 20:21:32] "GET / HTTP/1.1" 200 16351
+[12/Jan/2020 20:21:32] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[12/Jan/2020 20:21:32] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[12/Jan/2020 20:21:32] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[12/Jan/2020 20:21:32] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+D:\Programming Language\python Programming\django\project3\crm_main\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 12, 2020 - 20:22:34
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+D:\Programming Language\python Programming\django\project3\crm_main\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 12, 2020 - 20:22:37
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+D:\Programming Language\python Programming\django\project3\crm_main\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 12, 2020 - 20:22:46
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+D:\Programming Language\python Programming\django\project3\crm_main\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 12, 2020 - 20:24:32
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[12/Jan/2020 20:24:48] "GET / HTTP/1.1" 200 16351
+D:\Programming Language\python Programming\django\project3\crm_main\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 12, 2020 - 21:00:34
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+D:\Programming Language\python Programming\django\project3\crm_main\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\commands\runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\checks\registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\checks\urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\checks\urls.py", line 23, in check_resolver
+    return check_method()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\Programming Language\python Programming\django\project3\crm_main\urls.py", line 23, in <module>
+    path('', TemplateView.as_view(templateName='index.html')),
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\views\generic\base.py", line 57, in as_view
+    raise TypeError("%s() received an invalid keyword %r. as_view "
+TypeError: TemplateView() received an invalid keyword 'templateName'. as_view only accepts arguments that are already attributes of the class.
+Traceback (most recent call last):
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\base.py", line 328, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\commands\runserver.py", line 60, in execute
+    super().execute(*args, **options)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\base.py", line 369, in execute
+    output = self.handle(*args, **options)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\commands\runserver.py", line 95, in handle
+    self.run(**options)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\commands\runserver.py", line 102, in run
+    autoreload.run_with_reloader(self.inner_run, **options)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 602, in run_with_reloader
+    sys.exit(exit_code)
+SystemExit: 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\base.py", line 328, in run_from_argv
+    self.execute(*args, **cmd_options)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\__init__.py", line 395, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\base.py", line 341, in run_from_argv
+    connections.close_all()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\db\utils.py", line 230, in close_all
+    connection.close()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\asyncio.py", line 19, in inner
+    event_loop = asyncio.get_event_loop()
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\asyncio\events.py", line 636, in get_event_loop
+    self.set_event_loop(self.new_event_loop())
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\asyncio\events.py", line 656, in new_event_loop
+    return self._loop_factory()
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\asyncio\windows_events.py", line 309, in __init__
+    proactor = IocpProactor()
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\asyncio\windows_events.py", line 404, in __init__
+    def __init__(self, concurrency=0xffffffff):
+KeyboardInterrupt
+Exception ignored in: <function IocpProactor.__del__ at 0x03337C88>
+Traceback (most recent call last):
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\asyncio\windows_events.py", line 875, in __del__
+    self.close()
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\asyncio\windows_events.py", line 828, in close
+    if self._iocp is None:
+AttributeError: 'IocpProactor' object has no attribute '_iocp'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x032D1BF8>
+Traceback (most recent call last):
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\asyncio\base_events.py", line 645, in __del__
+    if not self.is_closed():
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\asyncio\base_events.py", line 642, in is_closed
+    return self._closed
+AttributeError: 'ProactorEventLoop' object has no attribute '_closed'
+^C
+(env) D:\Programming Language\python Programming\django\project3>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 12, 2020 - 21:03:04
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+[12/Jan/2020 21:03:08] "GET / HTTP/1.1" 500 84603
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+[12/Jan/2020 21:03:25] "GET / HTTP/1.1" 500 84603
+D:\Programming Language\python Programming\django\project3\crm_main\urls.py changed, reloading.
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\__init__.py", line 357, in execute
+    autoreload.check_errors(django.setup)()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\__init__.py", line 16, in setup
+    from django.urls import set_script_prefix
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\__init__.py", line 1, in <module>
+    from .base import (
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\base.py", line 9, in <module>
+    from .exceptions import NoReverseMatch, Resolver404
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\exceptions.py", line 1, in <module>
+    from django.http import Http404
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\http\__init__.py", line 2, in <module>
+    from django.http.request import (
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\http\request.py", line 10, in <module>
+    from django.core import signing
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\signing.py", line 45, in <module>
+    from django.utils.crypto import constant_time_compare, salted_hmac
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\crypto.py", line 6, in <module>
+    import secrets
+  File "<frozen importlib._bootstrap>", line 988, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 149, in __enter__
+KeyboardInterrupt
+
+(env) D:\Programming Language\python Programming\django\project3>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 12, 2020 - 21:13:09
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Programming Language\python Programming\django\project3\crm_main\views.py", line 5, in index
+    return render(request, 'index.html')
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+[12/Jan/2020 21:13:13] "GET / HTTP/1.1" 500 83342
+D:\Programming Language\python Programming\django\project3\crm_main\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 12, 2020 - 21:13:49
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+D:\Programming Language\python Programming\django\project3\crm_main\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 12, 2020 - 21:14:05
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+[12/Jan/2020 21:14:19] "GET / HTTP/1.1" 500 84603
+
+(env) D:\Programming Language\python Programming\django\project3>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 12, 2020 - 21:14:26
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+[12/Jan/2020 21:14:28] "GET / HTTP/1.1" 500 84603
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+[12/Jan/2020 21:31:28] "GET / HTTP/1.1" 500 84603
+D:\Programming Language\python Programming\django\project3\crm_main\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 12, 2020 - 21:34:34
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[12/Jan/2020 21:34:44] "GET / HTTP/1.1" 200 14849
+[12/Jan/2020 21:34:45] "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 56517
+[12/Jan/2020 21:34:45] "GET /static/css/sb-admin-2.min.css HTTP/1.1" 200 164930
+[12/Jan/2020 21:34:47] "GET /static/js/sb-admin-2.min.js HTTP/1.1" 200 1106
+[12/Jan/2020 21:34:47] "GET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1" 200 2532
+[12/Jan/2020 21:34:47] "GET /static/js/demo/chart-area-demo.js HTTP/1.1" 200 3569
+[12/Jan/2020 21:34:47] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 21:34:47] "GET /static/js/demo/chart-pie-demo.js HTTP/1.1" 200 1057
+[12/Jan/2020 21:34:47] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78635
+[12/Jan/2020 21:34:48] "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 200 88145
+[12/Jan/2020 21:34:48] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 21:34:48] "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 75408
+[12/Jan/2020 21:39:48] "GET / HTTP/1.1" 200 13159
+[12/Jan/2020 21:39:49] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 21:39:49] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 21:41:12] "GET / HTTP/1.1" 200 13160
+[12/Jan/2020 21:41:13] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 21:41:13] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 21:43:45] "GET / HTTP/1.1" 200 13160
+[12/Jan/2020 21:43:45] "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 304 0
+[12/Jan/2020 21:43:45] "GET /static/css/sb-admin-2.min.css HTTP/1.1" 304 0
+[12/Jan/2020 21:43:45] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+[12/Jan/2020 21:43:45] "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+[12/Jan/2020 21:43:45] "GET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1" 304 0
+[12/Jan/2020 21:43:45] "GET /static/js/sb-admin-2.min.js HTTP/1.1" 304 0
+[12/Jan/2020 21:43:45] "GET /static/js/demo/chart-area-demo.js HTTP/1.1" 304 0
+[12/Jan/2020 21:43:45] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 21:43:45] "GET /static/js/demo/chart-pie-demo.js HTTP/1.1" 304 0
+[12/Jan/2020 21:43:45] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 21:43:45] "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+[12/Jan/2020 21:44:41] "GET / HTTP/1.1" 200 1
+[12/Jan/2020 21:45:01] "GET / HTTP/1.1" 200 13159
+[12/Jan/2020 21:45:01] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 21:45:01] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 21:45:21] "GET / HTTP/1.1" 200 13159
+[12/Jan/2020 21:45:22] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 21:45:22] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 21:46:48] "GET / HTTP/1.1" 200 13159
+[12/Jan/2020 21:46:48] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 21:46:48] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 21:47:14] "GET / HTTP/1.1" 200 13159
+[12/Jan/2020 21:47:14] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 21:47:14] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:00:13] "GET / HTTP/1.1" 200 13159
+[12/Jan/2020 22:00:13] "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 304 0
+[12/Jan/2020 22:00:13] "GET /static/css/sb-admin-2.min.css HTTP/1.1" 304 0
+[12/Jan/2020 22:00:13] "GET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1" 304 0
+[12/Jan/2020 22:00:13] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+[12/Jan/2020 22:00:13] "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+[12/Jan/2020 22:00:13] "GET /static/js/sb-admin-2.min.js HTTP/1.1" 304 0
+[12/Jan/2020 22:00:13] "GET /static/js/demo/chart-area-demo.js HTTP/1.1" 304 0
+[12/Jan/2020 22:00:14] "GET /static/js/demo/chart-pie-demo.js HTTP/1.1" 304 0
+[12/Jan/2020 22:00:14] "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+[12/Jan/2020 22:00:14] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:00:14] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\__init__.py", line 395, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\base.py", line 341, in run_from_argv
+    connections.close_all()
+KeyboardInterrupt
+^C
+(env) D:\Programming Language\python Programming\django\project3>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 12, 2020 - 22:01:01
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+[12/Jan/2020 22:01:04] "GET / HTTP/1.1" 500 84171
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+[12/Jan/2020 22:02:21] "GET / HTTP/1.1" 500 84171
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+[12/Jan/2020 22:02:38] "GET / HTTP/1.1" 500 84171
+D:\Programming Language\python Programming\django\project3\crm_main\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 12, 2020 - 22:03:21
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: sidebar.html
+[12/Jan/2020 22:03:21] "GET / HTTP/1.1" 500 84199
+D:\Programming Language\python Programming\django\project3\crm_main\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 12, 2020 - 22:03:29
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+D:\Programming Language\python Programming\django\project3\crm_main\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 12, 2020 - 22:03:58
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+[12/Jan/2020 22:03:58] "GET / HTTP/1.1" 500 84603
+
+(env) D:\Programming Language\python Programming\django\project3>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 12, 2020 - 22:04:09
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+[12/Jan/2020 22:04:12] "GET / HTTP/1.1" 500 84603
+D:\Programming Language\python Programming\django\project3\crm_main\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 12, 2020 - 22:04:19
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+[12/Jan/2020 22:04:24] "GET / HTTP/1.1" 500 84171
+D:\Programming Language\python Programming\django\project3\crm_main\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 12, 2020 - 22:05:38
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[12/Jan/2020 22:05:42] "GET / HTTP/1.1" 200 13159
+[12/Jan/2020 22:05:43] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:05:43] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:05:53] "GET / HTTP/1.1" 200 13159
+[12/Jan/2020 22:05:53] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:05:53] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+D:\Programming Language\python Programming\django\project3\crm_main\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 12, 2020 - 22:07:12
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[12/Jan/2020 22:07:13] "GET / HTTP/1.1" 200 14799
+[12/Jan/2020 22:07:14] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:07:14] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+D:\Programming Language\python Programming\django\project3\crm_main\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 12, 2020 - 22:10:36
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 477, in parse
+    raise self.error(token, e)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader_tags.py", line 268, in do_extends
+    raise TemplateSyntaxError("'%s' cannot appear more than once in the same template" % bits[0])
+django.template.exceptions.TemplateSyntaxError: 'extends' cannot appear more than once in the same template
+[12/Jan/2020 22:10:37] "GET / HTTP/1.1" 500 136229
+D:\Programming Language\python Programming\django\project3\crm_main\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 12, 2020 - 22:10:53
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader_tags.py", line 103, in find_template
+    template, origin = context.template.engine.find_template(
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 477, in parse
+    raise self.error(token, e)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader_tags.py", line 268, in do_extends
+    raise TemplateSyntaxError("'%s' cannot appear more than once in the same template" % bits[0])
+django.template.exceptions.TemplateSyntaxError: 'extends' cannot appear more than once in the same template
+[12/Jan/2020 22:10:58] "GET / HTTP/1.1" 500 153143
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader_tags.py", line 103, in find_template
+    template, origin = context.template.engine.find_template(
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 477, in parse
+    raise self.error(token, e)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader_tags.py", line 268, in do_extends
+    raise TemplateSyntaxError("'%s' cannot appear more than once in the same template" % bits[0])
+django.template.exceptions.TemplateSyntaxError: 'extends' cannot appear more than once in the same template
+[12/Jan/2020 22:11:06] "GET / HTTP/1.1" 500 153261
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader_tags.py", line 103, in find_template
+    template, origin = context.template.engine.find_template(
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 477, in parse
+    raise self.error(token, e)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader_tags.py", line 268, in do_extends
+    raise TemplateSyntaxError("'%s' cannot appear more than once in the same template" % bits[0])
+django.template.exceptions.TemplateSyntaxError: 'extends' cannot appear more than once in the same template
+[12/Jan/2020 22:11:12] "GET / HTTP/1.1" 500 153267
+D:\Programming Language\python Programming\django\project3\crm_main\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 12, 2020 - 22:11:50
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[12/Jan/2020 22:24:38] "GET / HTTP/1.1" 200 3620
+[12/Jan/2020 22:24:38] "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 304 0
+[12/Jan/2020 22:24:38] "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+[12/Jan/2020 22:24:38] "GET /static/css/sb-admin-2.min.css HTTP/1.1" 304 0
+[12/Jan/2020 22:24:38] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+[12/Jan/2020 22:24:38] "GET /static/js/sb-admin-2.min.js HTTP/1.1" 304 0
+[12/Jan/2020 22:24:38] "GET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1" 304 0
+[12/Jan/2020 22:24:38] "GET /static/js/demo/chart-area-demo.js HTTP/1.1" 304 0
+[12/Jan/2020 22:24:38] "GET /static/js/demo/chart-pie-demo.js HTTP/1.1" 304 0
+[12/Jan/2020 22:24:38] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:24:39] "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+[12/Jan/2020 22:25:15] "GET / HTTP/1.1" 200 1
+[12/Jan/2020 22:26:00] "GET / HTTP/1.1" 200 3621
+[12/Jan/2020 22:26:00] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:26:00] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:30:50] "GET / HTTP/1.1" 200 3602
+[12/Jan/2020 22:30:50] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:30:51] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:31:22] "GET / HTTP/1.1" 200 5464
+[12/Jan/2020 22:31:22] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:31:22] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:33:17] "GET / HTTP/1.1" 200 3602
+[12/Jan/2020 22:33:17] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:33:18] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:34:16] "GET / HTTP/1.1" 200 13979
+[12/Jan/2020 22:34:16] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:34:16] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:35:30] "GET / HTTP/1.1" 200 13934
+[12/Jan/2020 22:35:31] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:35:31] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:35:45] "GET / HTTP/1.1" 200 13939
+[12/Jan/2020 22:35:45] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:35:45] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:36:10] "GET / HTTP/1.1" 200 13939
+[12/Jan/2020 22:36:10] "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+[12/Jan/2020 22:36:10] "GET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1" 304 0
+[12/Jan/2020 22:36:10] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 469, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader_tags.py", line 103, in find_template
+    template, origin = context.template.engine.find_template(
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 477, in parse
+    raise self.error(token, e)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 471, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 530, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 309: 'static'. Did you forget to register or load this tag?
+[12/Jan/2020 22:39:16] "GET / HTTP/1.1" 500 170741
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 469, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader_tags.py", line 103, in find_template
+    template, origin = context.template.engine.find_template(
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 477, in parse
+    raise self.error(token, e)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 471, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 530, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 309: 'static'. Did you forget to register or load this tag?
+[12/Jan/2020 22:39:31] "GET / HTTP/1.1" 500 170743
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 469, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader_tags.py", line 103, in find_template
+    template, origin = context.template.engine.find_template(
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 477, in parse
+    raise self.error(token, e)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 471, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\template\base.py", line 521, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 17: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[12/Jan/2020 22:40:03] "GET / HTTP/1.1" 500 176217
+[12/Jan/2020 22:40:17] "GET / HTTP/1.1" 200 13930
+[12/Jan/2020 22:40:17] "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 304 0
+[12/Jan/2020 22:40:17] "GET /static/css/sb-admin-2.min.css HTTP/1.1" 304 0
+[12/Jan/2020 22:40:18] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+[12/Jan/2020 22:40:18] "GET /static/js/sb-admin-2.min.js HTTP/1.1" 304 0
+[12/Jan/2020 22:40:18] "GET /static/js/demo/chart-area-demo.js HTTP/1.1" 304 0
+[12/Jan/2020 22:40:18] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:40:18] "GET /static/js/demo/chart-pie-demo.js HTTP/1.1" 304 0
+[12/Jan/2020 22:40:18] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:40:18] "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+[12/Jan/2020 22:42:28] "GET / HTTP/1.1" 200 13778
+[12/Jan/2020 22:42:28] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:42:28] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+Not Found: /charts.html
+[12/Jan/2020 22:43:18] "GET /charts.html HTTP/1.1" 404 2074
+[12/Jan/2020 22:43:22] "GET / HTTP/1.1" 200 13778
+[12/Jan/2020 22:43:22] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:43:26] "GET / HTTP/1.1" 200 13778
+[12/Jan/2020 22:43:26] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:43:43] "GET / HTTP/1.1" 200 13780
+[12/Jan/2020 22:43:43] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:43:51] "GET / HTTP/1.1" 200 13780
+[12/Jan/2020 22:43:51] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:44:31] "GET / HTTP/1.1" 200 13780
+[12/Jan/2020 22:44:32] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+
+(env) D:\Programming Language\python Programming\django\project3>
+
+(env) D:\Programming Language\python Programming\django\project3>cd apps
+
+(env) D:\Programming Language\python Programming\django\project3\apps>django-admin startapp workers
+
+(env) D:\Programming Language\python Programming\django\project3\apps>django-admin startapp owners
+
+(env) D:\Programming Language\python Programming\django\project3\apps>django-admin startapp contractors
+
+(env) D:\Programming Language\python Programming\django\project3\apps>cd..
+
+(env) D:\Programming Language\python Programming\django\project3>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 12, 2020 - 22:52:51
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[12/Jan/2020 22:52:54] "GET / HTTP/1.1" 200 13780
+[12/Jan/2020 22:52:55] "GET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1" 304 0
+[12/Jan/2020 22:52:55] "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+[12/Jan/2020 22:52:55] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:57:31] "GET / HTTP/1.1" 200 13780
+[12/Jan/2020 22:57:31] "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 304 0
+[12/Jan/2020 22:57:31] "GET /static/css/sb-admin-2.min.css HTTP/1.1" 304 0
+[12/Jan/2020 22:57:31] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+[12/Jan/2020 22:57:31] "GET /static/js/demo/chart-pie-demo.js HTTP/1.1" 304 0
+[12/Jan/2020 22:57:31] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:57:31] "GET /static/js/sb-admin-2.min.js HTTP/1.1" 304 0
+[12/Jan/2020 22:57:31] "GET /static/js/demo/chart-area-demo.js HTTP/1.1" 304 0
+[12/Jan/2020 22:57:31] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 22:57:31] "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+D:\Programming Language\python Programming\django\project3\crm_main\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\commands\runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\checks\registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\checks\urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\checks\urls.py", line 23, in check_resolver
+    return check_method()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\Programming Language\python Programming\django\project3\crm_main\urls.py", line 18, in <module>
+    from apps.workers import signupView
+ImportError: cannot import name 'signupView' from 'apps.workers' (D:\Programming Language\python Programming\django\project3\apps\workers\__init__.py)
+D:\Programming Language\python Programming\django\project3\crm_main\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\commands\runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\checks\registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\checks\urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\checks\urls.py", line 23, in check_resolver
+    return check_method()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\Programming Language\python Programming\django\project3\crm_main\urls.py", line 18, in <module>
+    from apps.workers import signupView
+ImportError: cannot import name 'signupView' from 'apps.workers' (D:\Programming Language\python Programming\django\project3\apps\workers\__init__.py)
+D:\Programming Language\python Programming\django\project3\crm_main\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\commands\runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\checks\registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\checks\urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\checks\urls.py", line 23, in check_resolver
+    return check_method()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\Programming Language\python Programming\django\project3\crm_main\urls.py", line 18, in <module>
+    from apps.workers import SignupView
+ImportError: cannot import name 'SignupView' from 'apps.workers' (D:\Programming Language\python Programming\django\project3\apps\workers\__init__.py)
+D:\Programming Language\python Programming\django\project3\crm_main\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\commands\runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\checks\registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\checks\urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\checks\urls.py", line 23, in check_resolver
+    return check_method()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\Programming Language\python Programming\django\project3\crm_main\urls.py", line 18, in <module>
+    from apps.workers import SignupView
+ImportError: cannot import name 'SignupView' from 'apps.workers' (D:\Programming Language\python Programming\django\project3\apps\workers\__init__.py)
+D:\Programming Language\python Programming\django\project3\crm_main\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 12, 2020 - 23:05:06
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[12/Jan/2020 23:05:10] "GET / HTTP/1.1" 200 272
+Traceback (most recent call last):
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\socket.py", line 604, in socketpair
+BlockingIOError: [WinError 10035] A non-blocking socket operation could not be completed immediately
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\__init__.py", line 395, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\base.py", line 341, in run_from_argv
+    connections.close_all()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\db\utils.py", line 230, in close_all
+    connection.close()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\asyncio.py", line 19, in inner
+    event_loop = asyncio.get_event_loop()
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\asyncio\events.py", line 636, in get_event_loop
+    self.set_event_loop(self.new_event_loop())
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\asyncio\events.py", line 656, in new_event_loop
+    return self._loop_factory()
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\asyncio\windows_events.py", line 310, in __init__
+    super().__init__(proactor)
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\asyncio\proactor_events.py", line 629, in __init__
+    self._make_self_pipe()
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\asyncio\proactor_events.py", line 760, in _make_self_pipe
+    self._ssock, self._csock = socket.socketpair()
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\socket.py", line 604, in socketpair
+    csock.connect((addr, port))
+KeyboardInterrupt
+Exception ignored in: <function BaseEventLoop.__del__ at 0x03462BB0>
+Traceback (most recent call last):
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\asyncio\base_events.py", line 648, in __del__
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\asyncio\proactor_events.py", line 684, in close
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\asyncio\proactor_events.py", line 752, in _close_self_pipe
+AttributeError: 'ProactorEventLoop' object has no attribute '_ssock'
+
+(env) D:\Programming Language\python Programming\django\project3>python manage.py makemigrations
+No changes detected
+
+(env) D:\Programming Language\python Programming\django\project3>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying sessions.0001_initial... OK
+
+(env) D:\Programming Language\python Programming\django\project3>python manage.py makemigrations
+No changes detected
+
+(env) D:\Programming Language\python Programming\django\project3>python manage.py createsuperuser
+Username (leave blank to use 'pradeepbhardwaj'):
+Email address: pradeep@gmail.com
+Password:
+Password (again):
+This password is too common.
+This password is entirely numeric.
+Bypass password validation and create user anyway? [y/N]: y
+Superuser created successfully.
+
+(env) D:\Programming Language\python Programming\django\project3>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 12, 2020 - 23:25:29
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[12/Jan/2020 23:25:30] "GET / HTTP/1.1" 200 272
+[12/Jan/2020 23:25:39] "GET /admin HTTP/1.1" 301 0
+[12/Jan/2020 23:25:39] "GET /admin/ HTTP/1.1" 302 0
+[12/Jan/2020 23:25:41] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1913
+[12/Jan/2020 23:25:42] "GET /static/admin/css/login.css HTTP/1.1" 200 1233
+[12/Jan/2020 23:25:42] "GET /static/admin/css/responsive.css HTTP/1.1" 200 18052
+[12/Jan/2020 23:25:42] "GET /static/admin/css/base.css HTTP/1.1" 200 16378
+[12/Jan/2020 23:25:42] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[12/Jan/2020 23:25:43] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[12/Jan/2020 23:25:43] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[12/Jan/2020 23:25:56] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[12/Jan/2020 23:25:57] "GET /admin/ HTTP/1.1" 200 3052
+[12/Jan/2020 23:25:57] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[12/Jan/2020 23:25:58] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[12/Jan/2020 23:25:58] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[12/Jan/2020 23:25:59] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[12/Jan/2020 23:38:46] "GET /admin/ HTTP/1.1" 200 3052
+[12/Jan/2020 23:38:51] "GET / HTTP/1.1" 200 272
+D:\Programming Language\python Programming\django\project3\crm_main\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 12, 2020 - 23:39:10
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[12/Jan/2020 23:39:11] "GET / HTTP/1.1" 200 13780
+[12/Jan/2020 23:39:11] "GET /static/css/sb-admin-2.min.css HTTP/1.1" 304 0
+[12/Jan/2020 23:39:11] "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 304 0
+[12/Jan/2020 23:39:11] "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+[12/Jan/2020 23:39:11] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+[12/Jan/2020 23:39:11] "GET /static/js/sb-admin-2.min.js HTTP/1.1" 304 0
+[12/Jan/2020 23:39:11] "GET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1" 304 0
+[12/Jan/2020 23:39:11] "GET /static/js/demo/chart-area-demo.js HTTP/1.1" 304 0
+[12/Jan/2020 23:39:11] "GET /static/js/demo/chart-pie-demo.js HTTP/1.1" 304 0
+[12/Jan/2020 23:39:11] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 23:39:11] "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+D:\Programming Language\python Programming\django\project3\crm_main\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 12, 2020 - 23:39:44
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[12/Jan/2020 23:39:47] "GET / HTTP/1.1" 200 13780
+[12/Jan/2020 23:39:47] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 23:39:47] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 23:39:55] "GET /workers HTTP/1.1" 301 0
+[12/Jan/2020 23:39:55] "GET /workers/ HTTP/1.1" 200 272
+D:\Programming Language\python Programming\django\project3\crm_main\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\commands\runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\checks\registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\checks\urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\checks\urls.py", line 23, in check_resolver
+    return check_method()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\Programming Language\python Programming\django\project3\crm_main\urls.py", line 25
+    path('owners/', SignupView.as_view(), name='workerhome')
+    ^
+SyntaxError: invalid syntax
+D:\Programming Language\python Programming\django\project3\crm_main\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\commands\runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\checks\registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\checks\urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\checks\urls.py", line 23, in check_resolver
+    return check_method()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\Programming Language\python Programming\django\project3\crm_main\urls.py", line 25
+    path('owners/', SignupView.as_view(), name='ownershome')
+    ^
+SyntaxError: invalid syntax
+D:\Programming Language\python Programming\django\project3\crm_main\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\commands\runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\checks\registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\checks\urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\checks\urls.py", line 23, in check_resolver
+    return check_method()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\Programming Language\python Programming\django\project3\crm_main\urls.py", line 25
+    path('owners/', owners.as_view(), name='ownershome')
+    ^
+SyntaxError: invalid syntax
+D:\Programming Language\python Programming\django\project3\crm_main\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "c:\users\pradeepbhardwaj\appdata\local\programs\python\python38-32\Lib\threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\commands\runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\management\base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\checks\registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\checks\urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\core\checks\urls.py", line 23, in check_resolver
+    return check_method()
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\site-packages\django\urls\resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "D:\Programming Language\python Programming\django\project3\env\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\Programming Language\python Programming\django\project3\crm_main\urls.py", line 25
+    path('owners/', Owners.as_view(), name='ownershome')
+    ^
+SyntaxError: invalid syntax
+D:\Programming Language\python Programming\django\project3\crm_main\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 12, 2020 - 23:44:53
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[12/Jan/2020 23:44:56] "GET /workers/ HTTP/1.1" 200 272
+[12/Jan/2020 23:45:02] "GET /owners/ HTTP/1.1" 200 270
+Not Found: /contarctor/
+[12/Jan/2020 23:45:07] "GET /contarctor/ HTTP/1.1" 404 2463
+[12/Jan/2020 23:45:12] "GET /contractors/ HTTP/1.1" 200 280
+[12/Jan/2020 23:45:17] "GET / HTTP/1.1" 200 13780
+[12/Jan/2020 23:45:17] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 23:45:17] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+D:\Programming Language\python Programming\django\project3\crm_main\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 12, 2020 - 23:45:54
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[12/Jan/2020 23:45:55] "GET / HTTP/1.1" 200 13780
+[12/Jan/2020 23:45:56] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+[12/Jan/2020 23:45:56] "GET /static/vendor/chart.js/Chart.min.js HTTP/1.1" 404 1710
+D:\Programming Language\python Programming\django\project3\crm_main\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 12, 2020 - 23:51:21
+Django version 3.0.2, using settings 'crm_main.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[12/Jan/2020 23:51:25] "GET / HTTP/1.1" 200 36285
+Not Found: /fonts/icomoon/style.css
+[12/Jan/2020 23:51:25] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+[12/Jan/2020 23:51:25] "GET /static/home/css/magnific-popup.css HTTP/1.1" 200 6950
+[12/Jan/2020 23:51:25] "GET /static/home/css/bootstrap.min.css HTTP/1.1" 200 159759
+[12/Jan/2020 23:51:25] "GET /static/home/css/jquery-ui.css HTTP/1.1" 200 21738
+[12/Jan/2020 23:51:25] "GET /static/home/css/owl.theme.default.min.css HTTP/1.1" 200 965
+[12/Jan/2020 23:51:25] "GET /static/home/css/bootstrap-datepicker.css HTTP/1.1" 200 17144
+[12/Jan/2020 23:51:25] "GET /static/home/css/animate.css HTTP/1.1" 200 77748
+Not Found: /fonts/flaticon/font/flaticon.css
+[12/Jan/2020 23:51:25] "GET /static/home/css/owl.carousel.min.css HTTP/1.1" 200 2936
+[12/Jan/2020 23:51:25] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+Not Found: /images/company_logo_blank.png
+[12/Jan/2020 23:51:25] "GET /images/company_logo_blank.png HTTP/1.1" 404 2517
+Not Found: /images/logo_1.png
+[12/Jan/2020 23:51:25] "GET /images/logo_1.png HTTP/1.1" 404 2481
+[12/Jan/2020 23:51:25] "GET /static/home/css/aos.css HTTP/1.1" 200 25983
+[12/Jan/2020 23:51:25] "GET /static/home/css/style.css HTTP/1.1" 200 29185
+Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+[12/Jan/2020 23:51:25] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 2616
+Not Found: /{% static 'home/js/jquery-ui.js
+[12/Jan/2020 23:51:25] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+[12/Jan/2020 23:51:25] "GET /static/home/js/jquery-migrate-3.0.1.min.js HTTP/1.1" 200 11421
+[12/Jan/2020 23:51:25] "GET /static/home/js/jquery.stellar.min.js HTTP/1.1" 200 12597
+[12/Jan/2020 23:51:25] "GET /static/home/js/bootstrap.min.js HTTP/1.1" 200 51039
+[12/Jan/2020 23:51:25] "GET /static/home/js/jquery.countdown.min.js HTTP/1.1" 200 5339
+[12/Jan/2020 23:51:25] "GET /static/home/js/jquery.magnific-popup.min.js HTTP/1.1" 200 20216
+[12/Jan/2020 23:51:25] "GET /static/home/js/jquery-3.3.1.min.js HTTP/1.1" 200 86926
+[12/Jan/2020 23:51:25] "GET /static/home/js/aos.js HTTP/1.1" 200 14244
+Not Found: /images/logo_2.png
+[12/Jan/2020 23:51:25] "GET /images/logo_2.png HTTP/1.1" 404 2481
+Not Found: /images/hero_2.jpg
+[12/Jan/2020 23:51:26] "GET /images/hero_2.jpg HTTP/1.1" 404 2481
+Not Found: /images/img_1.jpg
+[12/Jan/2020 23:51:26] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+[12/Jan/2020 23:51:26] "GET /static/home/js/mediaelement-and-player.min.js HTTP/1.1" 200 152469
+Not Found: /images/img_2.jpg
+[12/Jan/2020 23:51:26] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+[12/Jan/2020 23:51:26] "GET /static/home/js/popper.min.js HTTP/1.1" 200 20336
+Not Found: /images/img_3.jpg
+[12/Jan/2020 23:51:26] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+[12/Jan/2020 23:51:26] "GET /static/home/js/owl.carousel.min.js HTTP/1.1" 200 42766
+[12/Jan/2020 23:51:26] "GET /static/home/js/main.js HTTP/1.1" 200 9084
+[12/Jan/2020 23:51:26] "GET /static/home/js/bootstrap-datepicker.min.js HTTP/1.1" 200 34172
+Not Found: /images/dmdlogo.png
+Not Found: /images/hero_1.jpg
+[12/Jan/2020 23:51:26] "GET /images/dmdlogo.png HTTP/1.1" 404 2484
+[12/Jan/2020 23:51:26] "GET /images/hero_1.jpg HTTP/1.1" 404 2481
+Not Found: /{% static 'home/js/jquery-ui.js
+[12/Jan/2020 23:51:26] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /images/img_2.jpg
+Not Found: /images/img_3.jpg
+[12/Jan/2020 23:51:26] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_1.jpg
+[12/Jan/2020 23:51:26] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+[12/Jan/2020 23:51:26] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+[12/Jan/2020 23:52:08] "GET /contractors/ HTTP/1.1" 200 280
+[12/Jan/2020 23:52:13] "GET / HTTP/1.1" 200 36285
+Not Found: /fonts/icomoon/style.css
+[12/Jan/2020 23:52:13] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+Not Found: /fonts/flaticon/font/flaticon.css
+[12/Jan/2020 23:52:14] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+Not Found: /images/company_logo_blank.png
+[12/Jan/2020 23:52:14] "GET /images/company_logo_blank.png HTTP/1.1" 404 2517
+Not Found: /images/logo_1.png
+[12/Jan/2020 23:52:14] "GET /images/logo_1.png HTTP/1.1" 404 2481
+Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+[12/Jan/2020 23:52:14] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 2616
+Not Found: /{% static 'home/js/jquery-ui.js
+[12/Jan/2020 23:52:14] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /images/logo_2.png
+[12/Jan/2020 23:52:14] "GET /images/logo_2.png HTTP/1.1" 404 2481
+Not Found: /images/hero_2.jpg
+[12/Jan/2020 23:52:14] "GET /images/hero_2.jpg HTTP/1.1" 404 2481
+Not Found: /images/img_1.jpg
+[12/Jan/2020 23:52:14] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_2.jpg
+[12/Jan/2020 23:52:14] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_3.jpg
+[12/Jan/2020 23:52:14] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+Not Found: /{% static 'home/js/jquery-ui.js
+[12/Jan/2020 23:52:14] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /images/dmdlogo.png
+[12/Jan/2020 23:52:14] "GET /images/dmdlogo.png HTTP/1.1" 404 2484
+Not Found: /images/hero_1.jpg
+[12/Jan/2020 23:52:14] "GET /images/hero_1.jpg HTTP/1.1" 404 2481
+Not Found: /images/img_2.jpg
+Not Found: /images/img_1.jpg
+[12/Jan/2020 23:52:14] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_3.jpg
+[12/Jan/2020 23:52:14] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+[12/Jan/2020 23:52:14] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+Not Found: /fonts/icomoon/style.css
+[12/Jan/2020 23:58:00] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+Not Found: /fonts/flaticon/font/flaticon.css
+[12/Jan/2020 23:58:00] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+[12/Jan/2020 23:58:00] "GET /static/home/js/popper.min.js.map HTTP/1.1" 404 1701
+[12/Jan/2020 23:58:00] "GET /static/home/js/bootstrap.min.js.map HTTP/1.1" 404 1710
+[12/Jan/2020 23:58:00] "GET /static/home/js/aos.js.map HTTP/1.1" 404 1680
+Not Found: /images/img_1.jpg
+Not Found: /images/img_2.jpg
+[12/Jan/2020 23:58:00] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+[12/Jan/2020 23:58:00] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_3.jpg
+[12/Jan/2020 23:58:00] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+[12/Jan/2020 23:58:01] "GET /static/home/css/aos.css.map HTTP/1.1" 404 1686
+[12/Jan/2020 23:58:01] "GET /static/home/css/bootstrap-datepicker.css.map HTTP/1.1" 404 1737
+Not Found: /images/img_1.jpg
+Not Found: /images/img_2.jpg
+[13/Jan/2020 00:01:29] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:01:29] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:01:29] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:01:29] "GET / HTTP/1.1" 200 36346
+Not Found: /fonts/icomoon/style.css
+Not Found: /fonts/flaticon/font/flaticon.css
+[13/Jan/2020 00:01:29] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+[13/Jan/2020 00:01:29] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+Not Found: /images/company_logo_blank.png
+Not Found: /images/logo_1.png
+[13/Jan/2020 00:01:29] "GET /images/company_logo_blank.png HTTP/1.1" 404 2517
+[13/Jan/2020 00:01:29] "GET /images/logo_1.png HTTP/1.1" 404 2481
+Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:01:29] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 2616
+[13/Jan/2020 00:01:29] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /images/img_1.jpg
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:01:29] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+Not Found: /images/logo_2.png
+[13/Jan/2020 00:01:29] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+Not Found: /images/hero_2.jpg
+[13/Jan/2020 00:01:29] "GET /images/logo_2.png HTTP/1.1" 404 2481
+Not Found: /images/img_2.jpg
+[13/Jan/2020 00:01:29] "GET /images/hero_2.jpg HTTP/1.1" 404 2481
+[13/Jan/2020 00:01:29] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+Not Found: /images/dmdlogo.png
+[13/Jan/2020 00:01:29] "GET /images/dmdlogo.png HTTP/1.1" 404 2484
+Not Found: /images/hero_1.jpg
+[13/Jan/2020 00:01:29] "GET /images/hero_1.jpg HTTP/1.1" 404 2481
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:01:29] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /images/img_1.jpg
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:01:30] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_2.jpg
+[13/Jan/2020 00:01:30] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:01:30] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:02:39] "GET / HTTP/1.1" 200 36402
+Not Found: /fonts/icomoon/style.css
+[13/Jan/2020 00:02:39] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+Not Found: /fonts/flaticon/font/flaticon.css
+[13/Jan/2020 00:02:39] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+Not Found: /images/company_logo_blank.png
+[13/Jan/2020 00:02:39] "GET /images/company_logo_blank.png HTTP/1.1" 404 2517
+Not Found: /images/logo_1.png
+[13/Jan/2020 00:02:39] "GET /images/logo_1.png HTTP/1.1" 404 2481
+Not Found: /{% static 'home/js/jquery-ui.js
+Not Found: /images/hero_2.jpg
+Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+Not Found: /images/logo_2.png
+[13/Jan/2020 00:02:40] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+[13/Jan/2020 00:02:40] "GET /images/hero_2.jpg HTTP/1.1" 404 2481
+[13/Jan/2020 00:02:40] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 2616
+[13/Jan/2020 00:02:40] "GET /images/logo_2.png HTTP/1.1" 404 2481
+Not Found: /images/img_1.jpg
+Not Found: /images/img_2.jpg
+[13/Jan/2020 00:02:40] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:02:40] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:02:40] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:02:40] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /images/hero_1.jpg
+[13/Jan/2020 00:02:40] "GET /images/hero_1.jpg HTTP/1.1" 404 2481
+Not Found: /images/img_3.jpg
+Not Found: /images/img_1.jpg
+[13/Jan/2020 00:02:40] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_2.jpg
+[13/Jan/2020 00:02:40] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:02:40] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:03:32] "GET / HTTP/1.1" 200 36606
+Not Found: /fonts/icomoon/style.css
+[13/Jan/2020 00:03:33] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+Not Found: /fonts/flaticon/font/flaticon.css
+[13/Jan/2020 00:03:33] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+Not Found: /images/logo_2.png
+[13/Jan/2020 00:03:33] "GET /images/logo_2.png HTTP/1.1" 404 2481
+Not Found: /images/hero_2.jpg
+[13/Jan/2020 00:03:33] "GET /images/hero_2.jpg HTTP/1.1" 404 2481
+Not Found: /{% static 'home/js/jquery-ui.js
+Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+Not Found: /images/img_1.jpg
+[13/Jan/2020 00:03:33] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+[13/Jan/2020 00:03:33] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 2616
+[13/Jan/2020 00:03:33] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_2.jpg
+[13/Jan/2020 00:03:33] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:03:33] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:03:33] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /images/hero_1.jpg
+[13/Jan/2020 00:03:33] "GET /images/hero_1.jpg HTTP/1.1" 404 2481
+Not Found: /images/img_1.jpg
+Not Found: /images/img_2.jpg
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:03:33] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:03:33] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:03:33] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:03:47] "GET / HTTP/1.1" 200 36663
+Not Found: /fonts/icomoon/style.css
+[13/Jan/2020 00:03:47] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+Not Found: /fonts/flaticon/font/flaticon.css
+[13/Jan/2020 00:03:47] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+Not Found: /images/img_1.jpg
+Not Found: /images/hero_2.jpg
+[13/Jan/2020 00:03:47] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:03:47] "GET /images/hero_2.jpg HTTP/1.1" 404 2481
+Not Found: /images/img_2.jpg
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:03:48] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+[13/Jan/2020 00:03:48] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:03:48] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 2616
+[13/Jan/2020 00:03:48] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:03:48] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /images/hero_1.jpg
+[13/Jan/2020 00:03:48] "GET /images/hero_1.jpg HTTP/1.1" 404 2481
+Not Found: /images/img_1.jpg
+Not Found: /images/img_2.jpg
+[13/Jan/2020 00:03:48] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:03:48] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:03:48] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:04:36] "GET / HTTP/1.1" 200 36772
+Not Found: /fonts/icomoon/style.css
+[13/Jan/2020 00:04:36] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+Not Found: /fonts/flaticon/font/flaticon.css
+[13/Jan/2020 00:04:36] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+Not Found: /images/hero_2.jpg
+Not Found: /images/img_1.jpg
+[13/Jan/2020 00:04:36] "GET /images/hero_2.jpg HTTP/1.1" 404 2481
+[13/Jan/2020 00:04:36] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+Not Found: /{% static 'home/js/jquery-ui.js
+Not Found: /images/img_2.jpg
+[13/Jan/2020 00:04:36] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 2616
+[13/Jan/2020 00:04:36] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+[13/Jan/2020 00:04:36] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:04:36] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+Not Found: /images/hero_1.jpg
+[13/Jan/2020 00:04:36] "GET /images/hero_1.jpg HTTP/1.1" 404 2481
+Not Found: /images/img_2.jpg
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:04:36] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_1.jpg
+[13/Jan/2020 00:04:36] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:04:36] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:04:47] "GET / HTTP/1.1" 200 36772
+Not Found: /fonts/icomoon/style.css
+[13/Jan/2020 00:04:47] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+Not Found: /fonts/flaticon/font/flaticon.css
+Not Found: /images/hero_2.jpg
+[13/Jan/2020 00:04:47] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+[13/Jan/2020 00:04:47] "GET /images/hero_2.jpg HTTP/1.1" 404 2481
+Not Found: /images/img_1.jpg
+[13/Jan/2020 00:04:47] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:04:47] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 2616
+Not Found: /images/img_2.jpg
+[13/Jan/2020 00:04:47] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+[13/Jan/2020 00:04:47] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:04:47] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+Not Found: /images/hero_1.jpg
+[13/Jan/2020 00:04:47] "GET /images/hero_1.jpg HTTP/1.1" 404 2481
+Not Found: /images/img_2.jpg
+Not Found: /images/img_1.jpg
+[13/Jan/2020 00:04:48] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:04:48] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:04:48] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:05:18] "GET / HTTP/1.1" 200 37208
+Not Found: /fonts/icomoon/style.css
+[13/Jan/2020 00:05:18] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+Not Found: /fonts/flaticon/font/flaticon.css
+[13/Jan/2020 00:05:18] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+Not Found: /images/hero_2.jpg
+[13/Jan/2020 00:05:18] "GET /images/hero_2.jpg HTTP/1.1" 404 2481
+Not Found: /images/img_1.jpg
+[13/Jan/2020 00:05:18] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+[13/Jan/2020 00:05:18] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 2616
+Not Found: /{% static 'home/js/jquery-ui.js
+Not Found: /images/img_2.jpg
+[13/Jan/2020 00:05:18] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:05:18] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:05:18] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:05:18] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /images/hero_1.jpg
+[13/Jan/2020 00:05:18] "GET /images/hero_1.jpg HTTP/1.1" 404 2481
+Not Found: /images/img_2.jpg
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:05:18] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_1.jpg
+[13/Jan/2020 00:05:18] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:05:18] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:05:33] "GET / HTTP/1.1" 200 36775
+Not Found: /fonts/icomoon/style.css
+[13/Jan/2020 00:05:33] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+Not Found: /fonts/flaticon/font/flaticon.css
+[13/Jan/2020 00:05:33] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+Not Found: /images/hero_2.jpg
+Not Found: /images/img_1.jpg
+[13/Jan/2020 00:05:33] "GET /images/hero_2.jpg HTTP/1.1" 404 2481
+[13/Jan/2020 00:05:33] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_2.jpg
+Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:05:33] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:05:33] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 2616
+[13/Jan/2020 00:05:33] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:05:33] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+Not Found: /images/hero_1.jpg
+[13/Jan/2020 00:05:33] "GET /images/hero_1.jpg HTTP/1.1" 404 2481
+Not Found: /images/img_1.jpg
+Not Found: /images/img_2.jpg
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:05:33] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:05:33] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:05:33] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:07:20] "GET / HTTP/1.1" 200 34139
+Not Found: /fonts/icomoon/style.css
+[13/Jan/2020 00:07:20] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+Not Found: /fonts/flaticon/font/flaticon.css
+[13/Jan/2020 00:07:20] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+Not Found: /images/hero_2.jpg
+[13/Jan/2020 00:07:20] "GET /images/hero_2.jpg HTTP/1.1" 404 2481
+Not Found: /images/img_1.jpg
+[13/Jan/2020 00:07:20] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+Not Found: /{% static 'home/js/jquery-ui.js
+Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+[13/Jan/2020 00:07:21] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:07:21] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 2616
+Not Found: /images/img_2.jpg
+[13/Jan/2020 00:07:21] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:07:21] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:07:21] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /images/hero_1.jpg
+[13/Jan/2020 00:07:21] "GET /images/hero_1.jpg HTTP/1.1" 404 2481
+Not Found: /images/img_2.jpg
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:07:21] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_1.jpg
+[13/Jan/2020 00:07:21] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:07:21] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:07:35] "GET / HTTP/1.1" 200 36459
+Not Found: /fonts/icomoon/style.css
+[13/Jan/2020 00:07:36] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+Not Found: /fonts/flaticon/font/flaticon.css
+Not Found: /images/hero_2.jpg
+[13/Jan/2020 00:07:36] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+[13/Jan/2020 00:07:36] "GET /images/hero_2.jpg HTTP/1.1" 404 2481
+Not Found: /images/img_1.jpg
+[13/Jan/2020 00:07:36] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+Not Found: /images/img_2.jpg
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:07:36] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 2616
+[13/Jan/2020 00:07:36] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:07:36] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:07:36] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+Not Found: /images/hero_1.jpg
+[13/Jan/2020 00:07:36] "GET /images/hero_1.jpg HTTP/1.1" 404 2481
+Not Found: /images/img_1.jpg
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:07:36] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_2.jpg
+[13/Jan/2020 00:07:36] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:07:36] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:07:42] "GET / HTTP/1.1" 200 35890
+Not Found: /fonts/icomoon/style.css
+Not Found: /fonts/flaticon/font/flaticon.css
+[13/Jan/2020 00:07:42] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+[13/Jan/2020 00:07:42] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+Not Found: /images/img_1.jpg
+Not Found: /images/hero_2.jpg
+[13/Jan/2020 00:07:42] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:07:42] "GET /images/hero_2.jpg HTTP/1.1" 404 2481
+Not Found: /{% static 'home/js/jquery-ui.js
+Not Found: /images/img_2.jpg
+[13/Jan/2020 00:07:42] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:07:42] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 2616
+[13/Jan/2020 00:07:42] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:07:42] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:07:42] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /images/hero_1.jpg
+[13/Jan/2020 00:07:42] "GET /images/hero_1.jpg HTTP/1.1" 404 2481
+Not Found: /images/img_1.jpg
+Not Found: /images/img_2.jpg
+[13/Jan/2020 00:07:42] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:07:42] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:07:42] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:08:05] "GET / HTTP/1.1" 200 35781
+Not Found: /fonts/icomoon/style.css
+[13/Jan/2020 00:08:05] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+Not Found: /fonts/flaticon/font/flaticon.css
+[13/Jan/2020 00:08:05] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+Not Found: /images/hero_2.jpg
+Not Found: /images/img_1.jpg
+[13/Jan/2020 00:08:05] "GET /images/hero_2.jpg HTTP/1.1" 404 2481
+[13/Jan/2020 00:08:05] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+Not Found: /images/img_2.jpg
+[13/Jan/2020 00:08:06] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 2616
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:08:06] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:08:06] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:08:06] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+Not Found: /images/hero_1.jpg
+[13/Jan/2020 00:08:06] "GET /images/hero_1.jpg HTTP/1.1" 404 2481
+Not Found: /images/img_2.jpg
+Not Found: /images/img_1.jpg
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:08:06] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:08:06] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:08:06] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:08:14] "GET / HTTP/1.1" 200 35890
+Not Found: /fonts/icomoon/style.css
+[13/Jan/2020 00:08:14] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+Not Found: /fonts/flaticon/font/flaticon.css
+[13/Jan/2020 00:08:14] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+Not Found: /images/hero_2.jpg
+[13/Jan/2020 00:08:14] "GET /images/hero_2.jpg HTTP/1.1" 404 2481
+Not Found: /images/img_1.jpg
+[13/Jan/2020 00:08:14] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:08:14] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 2616
+Not Found: /images/img_2.jpg
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:08:14] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+[13/Jan/2020 00:08:14] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:08:15] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+Not Found: /images/hero_1.jpg
+[13/Jan/2020 00:08:15] "GET /images/hero_1.jpg HTTP/1.1" 404 2481
+Not Found: /images/img_1.jpg
+Not Found: /images/img_2.jpg
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:08:15] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:08:15] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:08:15] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:09:57] "GET / HTTP/1.1" 200 35883
+Not Found: /fonts/icomoon/style.css
+[13/Jan/2020 00:09:57] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+Not Found: /fonts/flaticon/font/flaticon.css
+[13/Jan/2020 00:09:57] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+Not Found: /images/hero_2.jpg
+[13/Jan/2020 00:09:57] "GET /images/hero_2.jpg HTTP/1.1" 404 2481
+Not Found: /images/img_1.jpg
+[13/Jan/2020 00:09:57] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+Not Found: /{% static 'home/js/jquery-ui.js
+Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+[13/Jan/2020 00:09:58] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /images/img_2.jpg
+[13/Jan/2020 00:09:58] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 2616
+[13/Jan/2020 00:09:58] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:09:58] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:09:58] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /images/hero_1.jpg
+[13/Jan/2020 00:09:58] "GET /images/hero_1.jpg HTTP/1.1" 404 2481
+Not Found: /images/img_3.jpg
+Not Found: /images/img_1.jpg
+[13/Jan/2020 00:09:58] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_2.jpg
+[13/Jan/2020 00:09:58] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:09:58] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:10:26] "GET / HTTP/1.1" 200 35853
+Not Found: /fonts/flaticon/font/flaticon.css
+Not Found: /fonts/icomoon/style.css
+[13/Jan/2020 00:10:26] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+[13/Jan/2020 00:10:26] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+Not Found: /images/hero_2.jpg
+Not Found: /images/img_1.jpg
+[13/Jan/2020 00:10:26] "GET /images/hero_2.jpg HTTP/1.1" 404 2481
+[13/Jan/2020 00:10:26] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+Not Found: /{% static 'home/js/jquery-ui.js
+Not Found: /images/img_2.jpg
+[13/Jan/2020 00:10:26] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:10:26] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:10:26] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 2616
+[13/Jan/2020 00:10:26] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:10:26] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /images/hero_1.jpg
+[13/Jan/2020 00:10:26] "GET /images/hero_1.jpg HTTP/1.1" 404 2481
+Not Found: /images/img_1.jpg
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:10:26] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_2.jpg
+[13/Jan/2020 00:10:26] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:10:26] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:10:47] "GET / HTTP/1.1" 200 35817
+Not Found: /fonts/icomoon/style.css
+Not Found: /fonts/flaticon/font/flaticon.css
+[13/Jan/2020 00:10:47] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+[13/Jan/2020 00:10:47] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+Not Found: /images/hero_2.jpg
+Not Found: /images/img_1.jpg
+[13/Jan/2020 00:10:47] "GET /images/hero_2.jpg HTTP/1.1" 404 2481
+[13/Jan/2020 00:10:47] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+Not Found: /{% static 'home/js/jquery-ui.js
+Not Found: /images/img_2.jpg
+[13/Jan/2020 00:10:47] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 2616
+[13/Jan/2020 00:10:47] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+[13/Jan/2020 00:10:47] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:10:47] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+Not Found: /images/hero_1.jpg
+[13/Jan/2020 00:10:47] "GET /images/hero_1.jpg HTTP/1.1" 404 2481
+Not Found: /images/img_1.jpg
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:10:48] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_2.jpg
+[13/Jan/2020 00:10:48] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:10:48] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:13:59] "GET / HTTP/1.1" 200 35950
+Not Found: /fonts/icomoon/style.css
+[13/Jan/2020 00:13:59] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+Not Found: /fonts/flaticon/font/flaticon.css
+[13/Jan/2020 00:13:59] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+Not Found: /images/hero_2.jpg
+[13/Jan/2020 00:13:59] "GET /images/hero_2.jpg HTTP/1.1" 404 2481
+Not Found: /images/img_1.jpg
+[13/Jan/2020 00:13:59] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+Not Found: /{% static 'home/js/jquery-ui.js
+Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+[13/Jan/2020 00:14:00] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+[13/Jan/2020 00:14:00] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 2616
+Not Found: /images/img_2.jpg
+[13/Jan/2020 00:14:00] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:14:00] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:14:00] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /images/hero_1.jpg
+[13/Jan/2020 00:14:00] "GET /images/hero_1.jpg HTTP/1.1" 404 2481
+Not Found: /images/img_2.jpg
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:14:00] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_1.jpg
+[13/Jan/2020 00:14:00] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:14:00] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:16:40] "GET / HTTP/1.1" 200 36007
+Not Found: /fonts/icomoon/style.css
+[13/Jan/2020 00:16:40] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+Not Found: /fonts/flaticon/font/flaticon.css
+[13/Jan/2020 00:16:40] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+Not Found: /images/hero_2.jpg
+Not Found: /images/img_1.jpg
+[13/Jan/2020 00:16:40] "GET /images/hero_2.jpg HTTP/1.1" 404 2481
+[13/Jan/2020 00:16:40] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_2.jpg
+Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:16:41] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:16:41] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 2616
+[13/Jan/2020 00:16:41] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:16:41] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_1.jpg
+Not Found: /images/img_3.jpg
+Not Found: /images/img_2.jpg
+[13/Jan/2020 00:16:41] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:16:41] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:16:41] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+Not Found: /fonts/icomoon/style.css
+[13/Jan/2020 00:17:06] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+Not Found: /fonts/flaticon/font/flaticon.css
+[13/Jan/2020 00:17:07] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+[13/Jan/2020 00:17:07] "GET /static/home/js/popper.min.js.map HTTP/1.1" 404 1701
+[13/Jan/2020 00:17:07] "GET /static/home/js/bootstrap.min.js.map HTTP/1.1" 404 1710
+[13/Jan/2020 00:17:07] "GET /static/home/js/aos.js.map HTTP/1.1" 404 1680
+Not Found: /images/img_1.jpg
+Not Found: /images/img_2.jpg
+[13/Jan/2020 00:17:07] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:17:07] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:17:07] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:17:07] "GET /static/home/css/bootstrap-datepicker.css.map HTTP/1.1" 404 1737
+[13/Jan/2020 00:17:07] "GET /static/home/css/aos.css.map HTTP/1.1" 404 1686
+Not Found: /images/img_2.jpg
+Not Found: /images/img_1.jpg
+Not Found: /images/img_3.jpg
+[13/Jan/2020 00:17:37] "GET /images/img_1.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:17:37] "GET /images/img_2.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:17:37] "GET /images/img_3.jpg HTTP/1.1" 404 2478
+[13/Jan/2020 00:21:40] "GET / HTTP/1.1" 200 8112
+Not Found: /fonts/icomoon/style.css
+Not Found: /fonts/flaticon/font/flaticon.css
+[13/Jan/2020 00:21:40] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+[13/Jan/2020 00:21:40] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:21:40] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:21:40] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+[13/Jan/2020 00:22:40] "GET / HTTP/1.1" 200 9895
+Not Found: /fonts/icomoon/style.css
+Not Found: /fonts/flaticon/font/flaticon.css
+[13/Jan/2020 00:22:40] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+[13/Jan/2020 00:22:40] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:22:40] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:22:40] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /fonts/icomoon/style.css
+[13/Jan/2020 00:22:58] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+Not Found: /fonts/flaticon/font/flaticon.css
+[13/Jan/2020 00:22:58] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+[13/Jan/2020 00:22:58] "GET /static/home/js/popper.min.js.map HTTP/1.1" 404 1701
+[13/Jan/2020 00:22:58] "GET /static/home/js/bootstrap.min.js.map HTTP/1.1" 404 1710
+[13/Jan/2020 00:22:59] "GET /static/home/js/aos.js.map HTTP/1.1" 404 1680
+[13/Jan/2020 00:22:59] "GET /static/home/css/bootstrap-datepicker.css.map HTTP/1.1" 404 1737
+[13/Jan/2020 00:22:59] "GET /static/home/css/aos.css.map HTTP/1.1" 404 1686
+[13/Jan/2020 00:23:30] "GET / HTTP/1.1" 200 9855
+Not Found: /fonts/flaticon/font/flaticon.css
+[13/Jan/2020 00:23:30] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+Not Found: /fonts/icomoon/style.css
+[13/Jan/2020 00:23:30] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:23:30] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:23:31] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /fonts/icomoon/style.css
+Not Found: /fonts/flaticon/font/flaticon.css
+[13/Jan/2020 00:23:37] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+[13/Jan/2020 00:23:37] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+[13/Jan/2020 00:23:37] "GET /static/home/js/popper.min.js.map HTTP/1.1" 404 1701
+[13/Jan/2020 00:23:37] "GET /static/home/js/bootstrap.min.js.map HTTP/1.1" 404 1710
+[13/Jan/2020 00:23:37] "GET /static/home/js/aos.js.map HTTP/1.1" 404 1680
+[13/Jan/2020 00:23:38] "GET /static/home/css/bootstrap-datepicker.css.map HTTP/1.1" 404 1737
+[13/Jan/2020 00:23:38] "GET /static/home/css/aos.css.map HTTP/1.1" 404 1686
+[13/Jan/2020 00:23:59] "GET / HTTP/1.1" 200 9869
+Not Found: /fonts/icomoon/style.css
+Not Found: /fonts/flaticon/font/flaticon.css
+[13/Jan/2020 00:23:59] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+[13/Jan/2020 00:23:59] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:23:59] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:23:59] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /fonts/icomoon/style.css
+Not Found: /fonts/flaticon/font/flaticon.css
+[13/Jan/2020 00:24:04] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+[13/Jan/2020 00:24:04] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+[13/Jan/2020 00:24:04] "GET /static/home/js/popper.min.js.map HTTP/1.1" 404 1701
+[13/Jan/2020 00:24:04] "GET /static/home/js/bootstrap.min.js.map HTTP/1.1" 404 1710
+[13/Jan/2020 00:24:04] "GET /static/home/js/aos.js.map HTTP/1.1" 404 1680
+[13/Jan/2020 00:24:04] "GET /static/home/css/bootstrap-datepicker.css.map HTTP/1.1" 404 1737
+[13/Jan/2020 00:24:04] "GET /static/home/css/aos.css.map HTTP/1.1" 404 1686
+[13/Jan/2020 00:24:15] "GET / HTTP/1.1" 200 9855
+Not Found: /fonts/icomoon/style.css
+[13/Jan/2020 00:24:15] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+Not Found: /fonts/flaticon/font/flaticon.css
+[13/Jan/2020 00:24:15] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:24:15] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:24:16] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+[13/Jan/2020 00:27:55] "GET / HTTP/1.1" 200 10748
+Not Found: /fonts/icomoon/style.css
+[13/Jan/2020 00:27:55] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+Not Found: /fonts/flaticon/font/flaticon.css
+[13/Jan/2020 00:27:55] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:27:55] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:27:55] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+[13/Jan/2020 00:29:33] "GET / HTTP/1.1" 200 11392
+Not Found: /fonts/icomoon/style.css
+Not Found: /fonts/flaticon/font/flaticon.css
+[13/Jan/2020 00:29:33] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+[13/Jan/2020 00:29:33] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:29:33] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:29:34] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+[13/Jan/2020 00:32:02] "GET / HTTP/1.1" 200 11366
+Not Found: /fonts/icomoon/style.css
+[13/Jan/2020 00:32:02] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+Not Found: /fonts/flaticon/font/flaticon.css
+[13/Jan/2020 00:32:02] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:32:02] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:32:03] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+[13/Jan/2020 00:32:58] "GET / HTTP/1.1" 200 11379
+Not Found: /fonts/icomoon/style.css
+[13/Jan/2020 00:32:58] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+Not Found: /fonts/flaticon/font/flaticon.css
+[13/Jan/2020 00:32:58] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:32:58] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:32:59] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+[13/Jan/2020 00:44:32] "GET / HTTP/1.1" 200 11379
+Not Found: /fonts/icomoon/style.css
+[13/Jan/2020 00:44:32] "GET /fonts/icomoon/style.css HTTP/1.1" 404 2499
+Not Found: /fonts/flaticon/font/flaticon.css
+[13/Jan/2020 00:44:32] "GET /fonts/flaticon/font/flaticon.css HTTP/1.1" 404 2526
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:44:32] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+Not Found: /{% static 'home/js/jquery-ui.js
+[13/Jan/2020 00:44:33] "GET /%7B%%20static%20'home/js/jquery-ui.js HTTP/1.1" 404 2546
+
+(env) D:\Programming Language\python Programming\django\project3>
+
+(env) D:\Programming Language\python Programming\django\project3>pip install django-crispy-forms
+Collecting django-crispy-forms
+  Using cached https://files.pythonhosted.org/packages/6e/27/9d6eef25ee96060b20a8df3cc6f6e5f98492900fada0b736767daf6f8f1c/django_crispy_forms-1.8.1-py2.py3-none-any.whl
+Installing collected packages: django-crispy-forms
+Successfully installed django-crispy-forms-1.8.1
+
+(env) D:\Programming Language\python Programming\django\project3>

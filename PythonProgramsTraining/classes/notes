@@ -1,0 +1,63 @@
+lsit of object
+we can store and create multiple object 
+__str__ itr si method to display an object 
+:- it invoke implecity when we print an object
+
+# Operator overolading
+1. To defined aditional behaviour/ meaning of an Operator
+2. to assigned new functionality/ Operation to an Operator
+
+class Point:
+    'to represent a point by x,y and z'
+
+    def __init__(self):
+        'to initialize a point by x,y and z'
+        self.X = float(input("Enter X : "))
+        self.Y = float(input("Enter Y : "))
+        self.Z = float(input("Enter Z : "))
+
+    def __str__(self):
+        'to display an object details'
+        str = "X : %0.2f\tY : %0.2f\tZ : %0.2f"%(self.X,self.Y,self.Z)
+        return str
+# Create a list to store objects of Point Class
+points = []
+for i in range(3):
+    # Creating an object & appending into list
+    points.append(Point())
+
+# Print obj 1 by 1
+for obj_in_item in points:
+    print(obj_in_item)
+
+
+'''
+Built-in class__dict__
+__doc__
+__name__
+__module__
+__bases__
+
+Built-in functions
+getattr(obj, name[,default])
+hasattr(obj,name)
+setattr(obj,name,value)
+delattr(obj,name)
+
+
+# inheritance 
+1. It is process to inherite bae class functionality into the derived class
+2. the significance of inheritance of reusability
+3. It is defined is a 
+
+
+
+parent class -> child class
+supern class -> subclass
+BaseClass -> derived class
+
+# Syntex of inheritance
+class <DerivedClass>(BaseClass1[,BaseClass2]):
+
+
+

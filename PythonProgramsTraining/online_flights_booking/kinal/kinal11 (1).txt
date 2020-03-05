@@ -1,0 +1,226 @@
+**details of flight from surat to delhi**
+  flight1
+      {
+         flight num:Al-490
+         from code: surat
+         to code:  delhi
+         Airport name:
+         duration - 21:25-23:05
+         price:5518
+         time:1:40m
+         type-AirIndia
+      }
+  flight2
+     {
+        flight num:6E-5029
+        from code:surat
+        to code: delhi
+        Airport name:
+        duration-21:30-23:30
+        price:5518
+        time:2:00hr
+        type-Indigo
+     }
+  flight3:
+     {
+       flight num:SG-8482
+       from code:surat
+       to code:delhi
+       Airport name:
+       time:1:50m
+       duration: 
+       price:6096
+       type:spicejet
+     }
+**details of flight from delhi to bombay**
+flight1:
+   {
+     flight num:l5-482
+     from code:delhi
+     to code:bombay
+     Airport name:Indira Gandhi Intl
+     time:2:10m
+     price:6044
+     duration-21:00-23:10
+     price:6044
+     type:Airasia India
+   }
+flight2:
+   { 
+    flight num:SG-8159
+    from code:delhi
+    to code:bombay
+    Airport name:Indira Gandhi Intl
+    time:2:15m
+    duration-21:35-23:50
+    price:6568
+    type:spicejet
+  }
+flight3:
+   {
+    flight num:UK-953
+    from code:delhi
+    to code:bombay
+    Airport name:Indira Gandhi Intl
+    time:2:10m
+    duration-20:40-22:50
+    price:6988
+    type:vistara
+   }  
+flight4:
+   {
+    flight num:SG-8705
+    from code:delhi
+    to code:bombay
+    Airport name:Indira Gandhi Intl
+    time:2:15m
+    duration-20:30-22:45
+    price:7146
+    type:spicejet
+   }
+flight5:
+   {
+    flight num:SG-8159
+    from code:delhi
+    to code:bombay
+    Airport name:Indira Gandhi Intl
+    time:2:15m
+    duration-21:35-23:50
+    price:6568
+    type:spicejet
+   }
+flight6:
+   {
+    flight num:SG-8705
+    from code:delhi
+    to code:bombay
+    Airport name:Indira Gandhi Intl
+    time:2hr:10m
+    duration-21:40-23:50
+    price:6988
+    type:vistara
+   }
+flight7:
+   {
+    flight num:SG-8705
+    from code:delhi
+    to code:bombay
+    Airport name:Indira Gandhi Intl
+    time:2:25m
+    duration-20:35-23:00
+    price:8180
+    type:IndiGo
+   }
+flight8:
+   {
+    flight num:G8-544
+    from code:delhi
+    to code:bombay
+    Airport name:Indira Gandhi Intl
+    time:2:20m
+    duration-22:40-01:00+1D
+    price:8242
+    type:GoAir
+   }
+flight9:
+   {
+    flight num:UK-953
+    from code:delhi
+    to code:bombay
+    Airport name:Indira Gandhi Intl
+    time:2:15m
+    duration-19:30-21:45
+    price:9834
+    type:IndiGo
+   }
+flight10:
+   {
+    flight num:UK-985
+    from code:delhi
+    to code:bombay
+    Airport name:Indira Gandhi Intl
+    time:2:05m
+    duration-19:50-21:55
+    price:10911
+    type:vistara
+   }
+**flight from bombay to udaipur**
+ flight1:
+  {
+    flight num:6E-764
+    from code:bombay
+    to code:udaipur
+    Airport name:chattrapati shivaji international
+    time:1:20m
+    duration-17:50-18:45
+    price:3889
+    type:Indigo
+  }
+ flight2:
+ {
+    flight num:SG-6422
+    from code:bombay
+    to code:udaipur
+    Airport name:chattrapati shivaji international
+    time:1:30m
+    duration-15:50-17:20
+    price:3887
+    type:spicejet
+ }
+flight3:
+{
+    flight num:6E-749
+    from code:bombay
+    to code:udaipur
+    Airport name:chattrapati shivaji international
+    time:1:30m
+    duration-12:15-13:40
+    price:4250
+    type:Indigo
+}
+flight4:
+{
+    flight num:Al-643
+    from code:bombay
+    to code:udaipur
+    Airport name:chattrapati shivaji international
+    time:1:20m
+    duration-14:20-15:40
+    price:4309
+    type:Airlndia
+}
+    
+flight5:
+{
+    flight num:UK-613
+    from code:bombay
+    to code:udaipur
+    Airport name:chattrapati shivaji international
+    time:1:30m
+    duration-12:15-13:45
+    price:4519
+    type:vistara
+}  
+ ***flight from surat to udaipur***
+flight 1:
+{
+    flight num:SG-3722
+    from code:surat
+    to code:udaipur
+    Airport name:surat
+    time:1:15m
+    duration-14:35-15:50
+    price:3734
+    type:spicejet
+}
+flight2:
+{
+    flight num-Al-490
+    from code:surat
+    to code:udaipur
+    Airport name:surat
+    time:17:10m
+    duration-21:25-14:35+1D
+    price:7513
+    type:AirIndia
+}

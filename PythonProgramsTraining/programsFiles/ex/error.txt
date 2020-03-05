@@ -1,0 +1,2 @@
+2020-01-04 10:44:57.154721	<class 'TypeError'>	can't multiply sequence by non-int of type 'float'
+2020-01-04 10:46:07.307183	<class 'FileNotFoundError'>	[Errno 2] No such file or directory: 'info1.txt'

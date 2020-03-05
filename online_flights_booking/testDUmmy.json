@@ -1,0 +1,24 @@
+{
+    "flight1":{
+        "flights_no" : "AI30-AMD-BOB",
+            "from_code" : "AMD",
+            "to_code" : "BOB",
+            "name" : "Sardar Vallabhbhai Patel International Airport",
+            "price" : "2377",
+            "boarding" : "Ahmedabad",
+            "to" : "Mumbai",
+            "type" : "IndiGo",
+            "time" : "01h 15m"
+    },
+    "flight2":{
+            "flights_no" : "SG638-BOB-AMD",
+            "from_code" : "BOB",
+            "to_code" : "AMD",
+            "name" : "Sardar Vallabhbhai Patel International Airport",
+            "price" : "2700",
+            "boarding" : "Mumbai",
+            "to" : "Ahmedabad",
+            "type" : "SpiceJet",
+            "time" : "59m"
+    }
+}
